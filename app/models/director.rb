@@ -5,4 +5,6 @@ class Director < ApplicationRecord
 
   # Validations
 
+  validates :dob, :uniqueness => { :scope => [:name] }
+
 end
