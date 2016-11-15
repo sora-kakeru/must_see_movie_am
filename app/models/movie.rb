@@ -5,4 +5,6 @@ class Movie < ApplicationRecord
 
   # Validations
 
+  validates :year, :length => { :minimum => 1870, :maximum => 2050 }
+
 end
